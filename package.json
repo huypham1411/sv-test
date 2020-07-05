@@ -4,9 +4,7 @@
   "description": "sv-web",
   "main": "index.js",
   "dependencies": {
-    "react-router-sitemap": "^1.2.0"
-  },
-  "devDependencies": {
+    "react-router-sitemap": "^1.2.0",
     "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -33,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/huypham1411/sv-test/issues"
   },
-  "homepage": "https://github.com/huypham1411/sv-test#readme"
+  "homepage": "https://github.com/huypham1411/sv-test#readme",
+  "devDependencies": {}
 }
