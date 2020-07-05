@@ -16,6 +16,9 @@ app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 // Serve static files from the React frontend app
 //quan trong de deploy
+app.get('/api', (req, res) => {
+    res.status(200).json({api: 'version 1'})
+  })
 app.use(express.static(path.join(__dirname, 'client/build')))
 // Anything that doesn't match the above, send back index.html
 // app.get('*', (req, res) => {
