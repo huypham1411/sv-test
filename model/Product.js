@@ -1,0 +1,51 @@
+const mongoose = require('mongoose');
+
+const productSchema=new mongoose.Schema({
+img:{
+    type:String,
+    min:2,
+    max:1000
+},
+img2:{
+    type:String,
+    min:2,
+    max:1000
+},
+img3:{
+    type:String,
+    min:2,
+    max:1000
+},
+id:{
+    type:String,
+    min:2,
+    max:1000
+},
+name:{
+    type:String,
+    max:1024,
+    min:6
+},
+type:{
+    type:String,
+    min:2,
+    max:255
+},
+status:{
+    type:String,
+    min:2,
+    max:255
+},
+description:{
+    type:String,
+    min:2,
+    max:255
+},
+price:{
+    type:String,
+    min:2,
+    max:255
+}
+})
+
+module.exports=mongoose.model('Product',productSchema);
